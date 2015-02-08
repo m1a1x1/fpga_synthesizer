@@ -1,0 +1,13 @@
+set_global_assignment -entity "VGA_Audio" -library "VGA_Audio" -name IP_TOOL_NAME "altera_pll"
+set_global_assignment -entity "VGA_Audio" -library "VGA_Audio" -name IP_TOOL_VERSION "13.0dp"
+set_global_assignment -entity "VGA_Audio" -library "VGA_Audio" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "VGA_Audio" -name MISC_FILE [file join $::quartus(qip_path) "VGA_Audio.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+
+set_global_assignment -library "VGA_Audio" -name VERILOG_FILE [file join $::quartus(qip_path) "VGA_Audio.v"]
+set_global_assignment -library "VGA_Audio" -name VERILOG_FILE [file join $::quartus(qip_path) "VGA_Audio/VGA_Audio_0002.v"]
+set_global_assignment -library "VGA_Audio" -name QIP_FILE [file join $::quartus(qip_path) "VGA_Audio/VGA_Audio_0002.qip"]
+
+set_global_assignment -entity "VGA_Audio_0002" -library "VGA_Audio" -name IP_TOOL_NAME "altera_pll"
+set_global_assignment -entity "VGA_Audio_0002" -library "VGA_Audio" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "VGA_Audio_0002" -library "VGA_Audio" -name IP_TOOL_ENV "mwpim"
