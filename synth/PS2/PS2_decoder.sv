@@ -1,16 +1,22 @@
-module PS2_decoder(
+module PS2_decoder
+#(
 
-  input              clk_i,
-  input              rst_i,
+  parameter JINGLE_CNT       = 8
 
-  input [7:0]        ps2_data_i,
-  input              ps2_data_val_i,
+)
+(
 
-  output logic [2:0] num_o,
-  output logic       num_val_o,
+  input                                    clk_i,
+  input                                    rst_i,
 
-  output             vol_cntrl_o,
-  output             vol_cntrl_val_o
+  input                              [7:0] ps2_data_i,
+  input                                    ps2_data_val_i,
+
+  output logic [$clog2( JINGLE_CNT) )-1:0] num_o,
+  output logic                             num_val_o,
+
+  output                                   vol_cntrl_o,
+  output                                   vol_cntrl_val_o
  
 );
 
@@ -43,11 +49,11 @@ always_comb
     num_o     = '0;
     num_val_o = 1'b0;
 
-    for( int i = 0; i < 8; i++ )
+    for( int i = 0; i < JINGLE_CNT; i++ )
       begin
         if( ps2_data_sr[0] == key_pos[i] )
           begin
-            num_o     = i;
+            num_o = i;
 
             if( ps2_data_sr[1] != 8'hF0 )
               begin

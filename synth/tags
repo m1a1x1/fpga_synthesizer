@@ -1,0 +1,222 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACK	./I2C/I2C_Controller.v	/^	output ACK;$/;"	p
+ACK	./I2C/I2C_Controller.v	/^wire ACK= ACK1 | ACK2 |ACK3;$/;"	n
+ACK1	./I2C/I2C_Controller.v	/^reg ACK1,ACK2,ACK3;$/;"	r
+ACK2	./I2C/I2C_Controller.v	/^reg ACK1,ACK2,ACK3;$/;"	r
+ACK3	./I2C/I2C_Controller.v	/^reg ACK1,ACK2,ACK3;$/;"	r
+AUDIO_DAC	./AUDIO/AUDIO_DAC.sv	/^module AUDIO_DAC($/;"	m
+A_PATH_CTRL	./I2C/I2C_AV_Config.v	/^parameter	A_PATH_CTRL	=	5;$/;"	c
+Altera_UP_PS2_Command_Out	./PS2/Altera_UP_PS2_Command_Out.v	/^module Altera_UP_PS2_Command_Out ($/;"	m
+Altera_UP_PS2_Data_In	./PS2/Altera_UP_PS2_Data_In.v	/^module Altera_UP_PS2_Data_In ($/;"	m
+CLK_Freq	./I2C/I2C_AV_Config.v	/^parameter	CLK_Freq	=	50000000;	\/\/	50	MHz$/;"	c
+CLOCK	./I2C/I2C_Controller.v	/^	input  CLOCK;$/;"	p
+CLOCK_50	./PS2/PS2_Controller.v	/^input			CLOCK_50;$/;"	p
+CLOCK_CYCLES_FOR_101US	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	CLOCK_CYCLES_FOR_101US		= 5050;$/;"	c
+CLOCK_CYCLES_FOR_15MS	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	CLOCK_CYCLES_FOR_15MS		= 750000;$/;"	c
+CLOCK_CYCLES_FOR_2MS	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	CLOCK_CYCLES_FOR_2MS		= 100000;$/;"	c
+COUNTER_INCREMENT_FOR_101US	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	COUNTER_INCREMENT_FOR_101US	= 13'h0001;$/;"	c
+COUNTER_INCREMENT_FOR_15MS	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	COUNTER_INCREMENT_FOR_15MS	= 20'h00001;$/;"	c
+COUNTER_INCREMENT_FOR_2MS	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	COUNTER_INCREMENT_FOR_2MS	= 17'h00001;$/;"	c
+Cont	./RESET/Reset_Delay.v	/^reg	[19:0]	Cont = 0;$/;"	r
+D_PATH_CTRL	./I2C/I2C_AV_Config.v	/^parameter	D_PATH_CTRL	=	6;$/;"	c
+D_WIDTH	./ROM/simps_rom.v	/^   parameter D_WIDTH   = 16,$/;"	c
+Dummy_DATA	./I2C/I2C_AV_Config.v	/^parameter	Dummy_DATA	=	0;$/;"	c
+END	./I2C/I2C_Controller.v	/^	output END;	$/;"	p
+END	./I2C/I2C_Controller.v	/^reg END;$/;"	r
+GO	./I2C/I2C_Controller.v	/^	input  GO;$/;"	p
+I2C_AV_Config	./I2C/I2C_AV_Config.v	/^module I2C_AV_Config (	\/\/	Host Side$/;"	m
+I2C_Controller	./I2C/I2C_Controller.v	/^module I2C_Controller ($/;"	m
+I2C_DATA	./I2C/I2C_Controller.v	/^	input  [23:0]I2C_DATA;	$/;"	p
+I2C_Freq	./I2C/I2C_AV_Config.v	/^parameter	I2C_Freq	=	20000;		\/\/	20	KHz \/\/20000$/;"	c
+I2C_SCLK	./I2C/I2C_AV_Config.v	/^output		I2C_SCLK;$/;"	p
+I2C_SCLK	./I2C/I2C_Controller.v	/^	output I2C_SCLK;$/;"	p
+I2C_SCLK	./I2C/I2C_Controller.v	/^wire I2C_SCLK=SCLK | ( ((SD_COUNTER >= 4) & (SD_COUNTER <=30))? ~CLOCK :0 );$/;"	n
+I2C_SDAT	./I2C/I2C_AV_Config.v	/^inout		I2C_SDAT;$/;"	p
+I2C_SDAT	./I2C/I2C_Controller.v	/^ 	inout  I2C_SDAT;	$/;"	p
+I2C_SDAT	./I2C/I2C_Controller.v	/^wire I2C_SDAT=SDO?1'bz:0 ;$/;"	n
+LUT_DATA	./I2C/I2C_AV_Config.v	/^reg	[15:0]	LUT_DATA;$/;"	r
+LUT_INDEX	./I2C/I2C_AV_Config.v	/^reg	[5:0]	LUT_INDEX;$/;"	r
+LUT_SIZE	./I2C/I2C_AV_Config.v	/^parameter	LUT_SIZE	=	51;$/;"	c
+NUMBER_OF_BITS_FOR_101US	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	NUMBER_OF_BITS_FOR_101US	= 13;$/;"	c
+NUMBER_OF_BITS_FOR_15MS	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	NUMBER_OF_BITS_FOR_15MS		= 20;$/;"	c
+NUMBER_OF_BITS_FOR_2MS	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	NUMBER_OF_BITS_FOR_2MS		= 17;$/;"	c
+POWER_ON	./I2C/I2C_AV_Config.v	/^parameter	POWER_ON	=	7;$/;"	c
+PS2_CLK	./PS2/Altera_UP_PS2_Command_Out.v	/^inout				PS2_CLK;$/;"	p
+PS2_CLK	./PS2/PS2_Controller.v	/^inout			PS2_CLK;$/;"	p
+PS2_Controller	./PS2/PS2_Controller.v	/^module PS2_Controller #(parameter INITIALIZE_MOUSE = 0) ($/;"	m
+PS2_DAT	./PS2/Altera_UP_PS2_Command_Out.v	/^inout			 	PS2_DAT;$/;"	p
+PS2_DAT	./PS2/PS2_Controller.v	/^inout		 	PS2_DAT;$/;"	p
+PS2_STATE_0_IDLE	./PS2/Altera_UP_PS2_Command_Out.v	/^parameter	PS2_STATE_0_IDLE					= 3'h0,$/;"	c
+PS2_STATE_1_INITIATE_COMMUNICATION	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_1_INITIATE_COMMUNICATION	= 3'h1,$/;"	c
+PS2_STATE_2_WAIT_FOR_CLOCK	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_2_WAIT_FOR_CLOCK			= 3'h2,$/;"	c
+PS2_STATE_3_TRANSMIT_DATA	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_3_TRANSMIT_DATA			= 3'h3,$/;"	c
+PS2_STATE_4_TRANSMIT_STOP_BIT	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_4_TRANSMIT_STOP_BIT		= 3'h4,$/;"	c
+PS2_STATE_5_RECEIVE_ACK_BIT	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_5_RECEIVE_ACK_BIT			= 3'h5,$/;"	c
+PS2_STATE_6_COMMAND_WAS_SENT	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_6_COMMAND_WAS_SENT		= 3'h6,$/;"	c
+PS2_STATE_7_TRANSMISSION_ERROR	./PS2/Altera_UP_PS2_Command_Out.v	/^			PS2_STATE_7_TRANSMISSION_ERROR		= 3'h7;$/;"	c
+PS2_decoder	./PS2/PS2_decoder.sv	/^module PS2_decoder($/;"	m
+RESET	./I2C/I2C_Controller.v	/^	input  RESET;	$/;"	p
+Reset_Delay	./RESET/Reset_Delay.v	/^module	Reset_Delay(iCLK,oRESET);$/;"	m
+SAMPLE_CTRL	./I2C/I2C_AV_Config.v	/^parameter	SAMPLE_CTRL	=	9;$/;"	c
+SCLK	./I2C/I2C_Controller.v	/^reg SCLK;$/;"	r
+SD	./I2C/I2C_Controller.v	/^reg [23:0]SD;$/;"	r
+SDO	./I2C/I2C_Controller.v	/^	output SDO;$/;"	p
+SDO	./I2C/I2C_Controller.v	/^reg SDO;$/;"	r
+SD_COUNTER	./I2C/I2C_Controller.v	/^	output [5:0] SD_COUNTER;$/;"	p
+SD_COUNTER	./I2C/I2C_Controller.v	/^reg [5:0]SD_COUNTER;$/;"	r
+SEG7_LUT	./OTHER/SEG7_LUT.v	/^module SEG7_LUT	(	oSEG,iDIG	);$/;"	m
+SEG7_LUT_6	./OTHER/SEG7_LUT_6.v	/^module SEG7_LUT_6 (	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5,iDIG );$/;"	m
+SET_ACTIVE	./I2C/I2C_AV_Config.v	/^parameter	SET_ACTIVE	=	10;$/;"	c
+SET_FORMAT	./I2C/I2C_AV_Config.v	/^parameter	SET_FORMAT	=	8;$/;"	c
+SET_HEAD_L	./I2C/I2C_AV_Config.v	/^parameter	SET_HEAD_L	=	3;$/;"	c
+SET_HEAD_R	./I2C/I2C_AV_Config.v	/^parameter	SET_HEAD_R	=	4;$/;"	c
+SET_LIN_L	./I2C/I2C_AV_Config.v	/^parameter	SET_LIN_L	=	1;$/;"	c
+SET_LIN_R	./I2C/I2C_AV_Config.v	/^parameter	SET_LIN_R	=	2;$/;"	c
+SET_VIDEO	./I2C/I2C_AV_Config.v	/^parameter	SET_VIDEO	=	11;$/;"	c
+VGA_Audio	./PLL/VGA_Audio.v	/^module VGA_Audio ($/;"	m
+VGA_Audio_0002	./PLL/VGA_Audio_0002.v	/^module  VGA_Audio_0002($/;"	m
+W_R	./I2C/I2C_Controller.v	/^	input  W_R;$/;"	p
+aclr	./AUDIO/audio_fifo.v	/^	input	  aclr;$/;"	p
+aclr	./AUDIO/audio_fifo.v	/^	tri0	  aclr;$/;"	n
+add3	./OTHER/add3.sv	/^module add3($/;"	m
+address	./ROM/simps_rom.v	/^	input	[A_WIDTH-1:0]  address;$/;"	p
+adr	./ROM/py_utl/make_mif.py	/^    adr = i << 9 | j$/;"	v
+all_simps	./ROM/py_utl/make_mif.py	/^all_simps = list( )$/;"	v
+audio_fifo	./AUDIO/audio_fifo.v	/^module audio_fifo ($/;"	m
+audio_send	./AUDIO/audio_send.sv	/^module audio_send #($/;"	m
+bin_to_BCD	./OTHER/bin_to_BCD.sv	/^module bin_to_BCD($/;"	m
+clk	./PS2/Altera_UP_PS2_Command_Out.v	/^input				clk;$/;"	p
+clk	./PS2/Altera_UP_PS2_Data_In.v	/^input				clk;$/;"	p
+clock	./ROM/simps_rom.v	/^	input	  clock;$/;"	p
+clock	./ROM/simps_rom.v	/^	tri1	  clock;$/;"	n
+coder	./AUDIO/coder.sv	/^module coder($/;"	m
+command_initiate_counter	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[NUMBER_OF_BITS_FOR_101US:1]	command_initiate_counter;$/;"	r
+command_was_sent	./PS2/PS2_Controller.v	/^output			command_was_sent;$/;"	p
+command_was_sent_w	./PS2/PS2_Controller.v	/^wire send_command_w, command_was_sent_w, error_communication_timed_out_w;$/;"	n
+cur_bit	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[3:0]	cur_bit;$/;"	r
+data	./AUDIO/audio_fifo.v	/^	input	[31:0]  data;$/;"	p
+data_count	./PS2/Altera_UP_PS2_Data_In.v	/^reg			[3:0]	data_count;$/;"	r
+data_shift_reg	./PS2/Altera_UP_PS2_Data_In.v	/^reg			[7:0]	data_shift_reg;$/;"	r
+decoder	./OTHER/decoder.sv	/^module decoder($/;"	m
+error_communication_timed_out	./PS2/PS2_Controller.v	/^output			error_communication_timed_out;$/;"	p
+error_communication_timed_out_w	./PS2/PS2_Controller.v	/^wire send_command_w, command_was_sent_w, error_communication_timed_out_w;$/;"	n
+f	./ROM/py_utl/make_mif.py	/^f = open( 'jingls.mif', "w" )$/;"	v
+full	./AUDIO/audio_fifo.v	/^        wire full;$/;"	n
+iCLK	./I2C/I2C_AV_Config.v	/^input		iCLK;$/;"	p
+iCLK	./RESET/Reset_Delay.v	/^input		iCLK;$/;"	p
+iDIG	./OTHER/SEG7_LUT.v	/^input	[3:0]	iDIG;$/;"	p
+iDIG	./OTHER/SEG7_LUT_6.v	/^input	[23:0]	iDIG;$/;"	p
+iRST_N	./I2C/I2C_AV_Config.v	/^input		iRST_N;$/;"	p
+iVOLUME	./I2C/I2C_AV_Config.v	/^input   [6:0]   iVOLUME;        $/;"	p
+idle_counter	./PS2/PS2_Controller.v	/^reg		[7:0]	idle_counter;$/;"	r
+init_done	./PS2/PS2_Controller.v	/^		reg init_done;$/;"	r
+last_ps2_clk	./PS2/PS2_Controller.v	/^reg				last_ps2_clk;$/;"	r
+mI2C_ACK	./I2C/I2C_AV_Config.v	/^wire		mI2C_ACK;$/;"	n
+mI2C_CLK_DIV	./I2C/I2C_AV_Config.v	/^reg	[15:0]	mI2C_CLK_DIV;$/;"	r
+mI2C_CTRL_CLK	./I2C/I2C_AV_Config.v	/^reg			mI2C_CTRL_CLK;$/;"	r
+mI2C_DATA	./I2C/I2C_AV_Config.v	/^reg	[23:0]	mI2C_DATA;$/;"	r
+mI2C_END	./I2C/I2C_AV_Config.v	/^wire		mI2C_END;$/;"	n
+mI2C_GO	./I2C/I2C_AV_Config.v	/^reg			mI2C_GO;$/;"	r
+mSetup_ST	./I2C/I2C_AV_Config.v	/^reg	[3:0]	mSetup_ST;$/;"	r
+math	./ROM/py_utl/make_mif.py	/^import math$/;"	i
+ns_ps2_receiver	./PS2/Altera_UP_PS2_Data_In.v	/^reg			[2:0]	ns_ps2_receiver;$/;"	r
+ns_ps2_transceiver	./PS2/PS2_Controller.v	/^reg		[2:0]	ns_ps2_transceiver;$/;"	r
+ns_ps2_transmitter	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[2:0]	ns_ps2_transmitter;$/;"	r
+oSEG	./OTHER/SEG7_LUT.v	/^output	[6:0]	oSEG;$/;"	p
+oSEG	./OTHER/SEG7_LUT.v	/^reg		[6:0]	oSEG;$/;"	r
+oSEG0	./OTHER/SEG7_LUT_6.v	/^output	[6:0]	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5;$/;"	p
+oSEG1	./OTHER/SEG7_LUT_6.v	/^output	[6:0]	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5;$/;"	p
+oSEG2	./OTHER/SEG7_LUT_6.v	/^output	[6:0]	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5;$/;"	p
+oSEG3	./OTHER/SEG7_LUT_6.v	/^output	[6:0]	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5;$/;"	p
+oSEG4	./OTHER/SEG7_LUT_6.v	/^output	[6:0]	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5;$/;"	p
+oSEG5	./OTHER/SEG7_LUT_6.v	/^output	[6:0]	oSEG0,oSEG1,oSEG2,oSEG3,oSEG4,oSEG5;$/;"	p
+parameter	./ROM/simps_rom.v	/^   parameter INIT_FILE = "2.mif"$/;"	c
+print_sin	./ROM/py_utl/make_mif.py	/^def print_sin( simp ):$/;"	f
+print_version	./VERSION/print_version.sv	/^module print_version($/;"	m
+print_vol	./OTHER/print_vol.sv	/^module print_vol($/;"	m
+ps2_clk_negedge	./PS2/Altera_UP_PS2_Command_Out.v	/^input				ps2_clk_negedge;$/;"	p
+ps2_clk_negedge	./PS2/Altera_UP_PS2_Data_In.v	/^input				ps2_clk_negedge;$/;"	p
+ps2_clk_negedge	./PS2/PS2_Controller.v	/^wire			ps2_clk_negedge;$/;"	n
+ps2_clk_posedge	./PS2/Altera_UP_PS2_Command_Out.v	/^input				ps2_clk_posedge;$/;"	p
+ps2_clk_posedge	./PS2/Altera_UP_PS2_Data_In.v	/^input				ps2_clk_posedge;$/;"	p
+ps2_clk_posedge	./PS2/PS2_Controller.v	/^wire			ps2_clk_posedge;$/;"	n
+ps2_clk_reg	./PS2/PS2_Controller.v	/^reg				ps2_clk_reg;$/;"	r
+ps2_command	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[8:0]	ps2_command;$/;"	r
+ps2_data	./PS2/Altera_UP_PS2_Data_In.v	/^input			 	ps2_data;$/;"	p
+ps2_data_reg	./PS2/PS2_Controller.v	/^reg				ps2_data_reg;$/;"	r
+q	./AUDIO/audio_fifo.v	/^	output	[31:0]  q;$/;"	p
+q	./AUDIO/audio_fifo.v	/^	wire [31:0] q = sub_wire0[31:0];$/;"	n
+q	./ROM/simps_rom.v	/^	output	[D_WIDTH-1:0]  q;$/;"	p
+q	./ROM/simps_rom.v	/^	wire [D_WIDTH-1:0] q = sub_wire0[D_WIDTH-1:0];$/;"	n
+rdclk	./AUDIO/audio_fifo.v	/^	input	  rdclk;$/;"	p
+rdempty	./AUDIO/audio_fifo.v	/^	output	  rdempty;$/;"	p
+rdempty	./AUDIO/audio_fifo.v	/^	wire  rdempty = sub_wire1;$/;"	n
+rdreq	./AUDIO/audio_fifo.v	/^	input	  rdreq;$/;"	p
+received_data	./PS2/PS2_Controller.v	/^output	[7:0]	received_data;$/;"	p
+received_data_en	./PS2/PS2_Controller.v	/^output		 	received_data_en;$/;"	p
+reg	./PS2/Altera_UP_PS2_Command_Out.v	/^output	reg			command_was_sent;$/;"	p
+reg	./PS2/Altera_UP_PS2_Command_Out.v	/^output	reg		 	error_communication_timed_out;$/;"	p
+reg	./PS2/Altera_UP_PS2_Data_In.v	/^output reg		 	received_data_en;$/;"	p
+reg	./PS2/Altera_UP_PS2_Data_In.v	/^output reg	[7:0]	received_data;$/;"	p
+reg	./RESET/Reset_Delay.v	/^output reg	oRESET;$/;"	p
+reset	./PS2/Altera_UP_PS2_Command_Out.v	/^input				reset;$/;"	p
+reset	./PS2/Altera_UP_PS2_Data_In.v	/^input				reset;$/;"	p
+reset	./PS2/PS2_Controller.v	/^input			reset;$/;"	p
+s_ps2_receiver	./PS2/Altera_UP_PS2_Data_In.v	/^reg			[2:0]	s_ps2_receiver;$/;"	r
+s_ps2_transceiver	./PS2/PS2_Controller.v	/^reg		[2:0]	s_ps2_transceiver;$/;"	r
+s_ps2_transmitter	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[2:0]	s_ps2_transmitter;$/;"	r
+send_command	./PS2/Altera_UP_PS2_Command_Out.v	/^input				send_command;$/;"	p
+send_command	./PS2/PS2_Controller.v	/^input			send_command;$/;"	p
+send_command_w	./PS2/PS2_Controller.v	/^wire send_command_w, command_was_sent_w, error_communication_timed_out_w;$/;"	n
+simp1	./ROM/py_utl/make_mif.py	/^simp1 =  simp_sin( 523.25, 48000, 92, 16 )$/;"	v
+simp2	./ROM/py_utl/make_mif.py	/^simp2 = simp_sin( 587.33, 48000, 82, 16 )$/;"	v
+simp3	./ROM/py_utl/make_mif.py	/^simp3 = simp_sin( 659.26, 48000, 73, 16 )$/;"	v
+simp4	./ROM/py_utl/make_mif.py	/^simp4 = simp_sin( 698.46, 48000, 69, 16 )$/;"	v
+simp5	./ROM/py_utl/make_mif.py	/^simp5 = simp_sin( 783.99, 48000, 62, 16 )$/;"	v
+simp6	./ROM/py_utl/make_mif.py	/^simp6 = simp_sin( 880, 48000, 55, 16 )$/;"	v
+simp7	./ROM/py_utl/make_mif.py	/^simp7 = simp_sin( 987.77, 48000, 49, 16 )$/;"	v
+simp8	./ROM/py_utl/make_mif.py	/^simp8 =  simp_sin( 1046.5, 48000, 46, 16 )$/;"	v
+simp_puls_0	./ROM/py_utl/make_mif.py	/^def simp_puls_0( SAMPLES_CNT, SAMPLE_WIDTH ):$/;"	f
+simp_puls_bi	./ROM/py_utl/make_mif.py	/^def simp_puls_bi( SAMPLES_CNT, SAMPLE_WIDTH ):$/;"	f
+simp_sin	./ROM/py_utl/make_mif.py	/^def simp_sin(  REQ_FREQ, SAMPLE_FREQ, SAMPLES_CNT, SAMPLE_WIDTH ): $/;"	f
+simps_rom	./ROM/simps_rom.v	/^module simps_rom $/;"	m
+start_receiving_data	./PS2/Altera_UP_PS2_Data_In.v	/^input				start_receiving_data;$/;"	p
+start_receiving_data	./PS2/PS2_Controller.v	/^wire			start_receiving_data;$/;"	n
+sub_wire0	./AUDIO/audio_fifo.v	/^	wire [31:0] sub_wire0;$/;"	n
+sub_wire0	./ROM/simps_rom.v	/^	wire [D_WIDTH-1:0] sub_wire0;$/;"	n
+sub_wire1	./AUDIO/audio_fifo.v	/^	wire  sub_wire1;$/;"	n
+sub_wire2	./AUDIO/audio_fifo.v	/^	wire  sub_wire2;$/;"	n
+sub_wire3	./AUDIO/audio_fifo.v	/^	wire [7:0] sub_wire3;$/;"	n
+the_command	./PS2/Altera_UP_PS2_Command_Out.v	/^input		[7:0]	the_command;$/;"	p
+the_command	./PS2/PS2_Controller.v	/^input	[7:0]	the_command;$/;"	p
+the_command_w	./PS2/PS2_Controller.v	/^wire [7:0] the_command_w;$/;"	n
+top	./top.sv	/^module top($/;"	m
+top	./top_synth.sv	/^module top($/;"	m
+transfer_counter	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[NUMBER_OF_BITS_FOR_2MS:1]		transfer_counter;$/;"	r
+vol_convert	./OTHER/vol_convert.sv	/^module vol_convert( $/;"	m
+volume_control	./OTHER/volume_control.sv	/^module volume_control($/;"	m
+wait_for_incoming_data	./PS2/Altera_UP_PS2_Data_In.v	/^input				wait_for_incoming_data;$/;"	p
+wait_for_incoming_data	./PS2/PS2_Controller.v	/^wire			wait_for_incoming_data;$/;"	n
+waiting_counter	./PS2/Altera_UP_PS2_Command_Out.v	/^reg			[NUMBER_OF_BITS_FOR_15MS:1]		waiting_counter;$/;"	r
+wire	./AUDIO/audio_fifo.v	/^	output wire  wralmfull;$/;"	p
+wire	./PLL/VGA_Audio.v	/^		input  wire  refclk,   \/\/  refclk.clk$/;"	p
+wire	./PLL/VGA_Audio.v	/^		input  wire  rst,      \/\/   reset.reset$/;"	p
+wire	./PLL/VGA_Audio.v	/^		output wire  locked    \/\/  locked.export$/;"	p
+wire	./PLL/VGA_Audio.v	/^		output wire  outclk_0, \/\/ outclk0.clk$/;"	p
+wire	./PLL/VGA_Audio.v	/^		output wire  outclk_1, \/\/ outclk1.clk$/;"	p
+wire	./PLL/VGA_Audio.v	/^		output wire  outclk_2, \/\/ outclk2.clk$/;"	p
+wire	./PLL/VGA_Audio_0002.v	/^	input wire refclk,$/;"	p
+wire	./PLL/VGA_Audio_0002.v	/^	input wire rst,$/;"	p
+wire	./PLL/VGA_Audio_0002.v	/^	output wire locked$/;"	p
+wire	./PLL/VGA_Audio_0002.v	/^	output wire outclk_0,$/;"	p
+wire	./PLL/VGA_Audio_0002.v	/^	output wire outclk_1,$/;"	p
+wire	./PLL/VGA_Audio_0002.v	/^	output wire outclk_2,$/;"	p
+wrclk	./AUDIO/audio_fifo.v	/^	input	  wrclk;$/;"	p
+wrreq	./AUDIO/audio_fifo.v	/^	input	  wrreq;$/;"	p
+wrusedw	./AUDIO/audio_fifo.v	/^	wire [7:0] wrusedw = sub_wire3[7:0];$/;"	n
+zeros	./ROM/py_utl/make_mif.py	/^def zeros( SAMPLES_CNT ):$/;"	f
